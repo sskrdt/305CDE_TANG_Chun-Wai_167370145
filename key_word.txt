@@ -1,0 +1,13 @@
+add_successful		insert_successful
+reapeat_user		user_exists
+repeat_email		email_exists
+login_succ		login_successful
+login_fail		login_failed
+
+logAc			loginUserName
+isLogin			loginSuccessful
+isProg			isTriedLogin
+isAdded			insertSuccessful
+
+rep_ac			userExists
+rep_email		emailExists

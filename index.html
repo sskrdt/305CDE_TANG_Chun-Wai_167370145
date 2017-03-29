@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+        <!--
+        Zoom Template 
+        http://www.templatemo.com/tm-414-zoom
+        -->
+        <title>Taylor Swift</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        
+        <!-- Google Web Font Embed -->
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,500,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/templatemo_main.css">
+		<link rel="stylesheet" href="/maps/documentation/javascript/demos/demos.css">
+    </head>
+	<script src="https://use.fontawesome.com/b29aefee54.js"></script>
+    <body>
+        <div id="main-wrapper">
+            <!--[if lt IE 7]>
+                <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+            <![endif]-->
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center templatemo-logo margin-top-20">
+                <h1 class="templatemo-site-title">
+				Taylor Swift
+                </h1>
+                <h3 class="templatemo-site-title">
+				<span class="blue">Fans</span><span class="green">Page</span>
+                </h3>
+				<br>
+				<h3 id = "welcome" class = "templatemo-site-title"></h3>
+            </div>
+
+            <div class="image-section">
+                <div class="image-container">
+                    <img src="images/zoom-bg-1.jpg" id="menu-img" class="main-img inactive" alt="Zoom HTML5 Template by templatemo.com">
+                    <img src="images/zoom-bg-2.jpg" id="introduction-img" class="inactive" alt="Introduction">
+                    <img src="images/zoom-bg-3.jpg" id="album_list-img"  class="inactive" alt="album_list">
+					<img src="images/zoom-bg-3.jpg" id="a1-img"  class="inactive" alt="a1">
+					<img src="images/zoom-bg-3.jpg" id="a2-img"  class="inactive" alt="a2">
+					<img src="images/zoom-bg-3.jpg" id="a3-img"  class="inactive" alt="a3">
+					<img src="images/zoom-bg-3.jpg" id="a4-img"  class="inactive" alt="a4">
+					<img src="images/zoom-bg-3.jpg" id="a5-img"  class="inactive" alt="a5">
+                    <img src="images/zoom-bg-4.jpg" id="about-img" class="inactive" alt="About">
+                    <img src="images/zoom-bg-5.jpg" id="contact-img" class="inactive" alt="Contact">
+                    <img src="images/zoom-bg-6.jpg" id="favourite_list-img" class="main-img inactive" alt="Favourite List">
+                    <img src="images/zoom-bg-7.jpg" id="login-img" class="main-img inactive" alt="login">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 templatemo-content-wrapper">
+                    <div class="templatemo-content">
+                        
+                        <section id="menu-section" class="active">
+                            <div class="row">
+                                <!--top-->
+								<div class="col-xs-6 col-sm-3 col-md-3 col-lg-4 margin-bottom-20">
+                                    <a href="#introduction" class="change-section">
+                                        <div class="black-bg btn-menu">
+                                            <i class="fa fa-location-arrow"></i>
+                                            <h2>Intro.</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-4 margin-bottom-20">
+                                    <a href="#album_list" class="change-section">
+                                        <div class="black-bg btn-menu">
+                                            <i class="fa fa-music"></i>
+                                            <h2>Album List</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-4 margin-bottom-20">
+                                    <a href="#about" class="change-section">
+                                        <div class="black-bg btn-menu">
+                                            <i class="fa fa-search"></i>
+                                            <h2>Search</h2>
+                                        </div>
+                                    </a>
+                                </div>
+								
+                                <div id = "btn_fav"class="col-xs-12 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                                    <a href="#favourite_list" class="change-section">
+                                        <div class="black-bg btn-menu">
+                                            <h2>Favourite List</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id = "btn_login" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 margin-bottom-20">
+                                    <a href="./login.html">
+                                        <div class="black-bg btn-menu">
+                                            <h2>Login & Register</h2>
+                                        </div>
+                                    </a>
+                                </div>
+								<div id = "btn_logout"class="col-xs-12 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                                    <a href="javascript:sign_out();">
+                                        <div class="black-bg btn-menu">
+                                            <h2>Logout</h2>
+                                        </div>
+                                    </a>
+                                </div>
+								<div class="black-bg col-sm-12 col-md-12 col-lg-12">
+                                    <h2 class="text-center">Support Taylor Swift</h2>
+                                    
+                                    <div class="col-sm-12 col-md-12">
+                                        <p>If you want to support Taylor Swift, you can go to this co-operate shope and buy her album!</p>
+                                    </div>
+                                    
+                                    <div id="map" style="width:100%;height:400px;"></div>
+                                    <p>DNA, Sim City, 3/F, 309, 232, Mong Kok, Hong Kong</p>
+                                </div>
+                              
+                            </div>
+                        </section><!-- /.menu-section -->    
+						
+                        <section id="introduction-section" class="inactive">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                                    <div class="black-bg col-sm-12 col-md-12 col-lg-12">
+                                        <h2>Taylor Swift</h2>
+                                        <p>Taylor Alison Swift (born December 13, 1989) is an American singer-songwriter. One of the most popular contemporary female recording artists, she is known for narrative songs about her personal life, which has received much media attention.</p>
+										<p>As a songwriter, Swift has received awards from the Nashville Songwriters Association and the Songwriters Hall of Fame. She is also the recipient of ten Grammy Awards, five Guinness World Records, one Emmy Award, 23 Billboard Music Awards, 11 Country Music Association Awards, eight Academy of Country Music Awards, and one Brit Award. Swift is one of the best-selling artists of all time, having sold more than 40 million albums—including 27.1 million in the US—and 130 million single downloads. She has appeared in Time's 100 most influential people in the world (2010 and 2015), Forbes' top-earning women in music (2011–2015), Forbes' 100 most powerful women (2015) and Forbes Celebrity 100 (2016). She was the youngest woman to be included in the third of these and ranked first in Celebrity 100.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <div class="black-bg col-sm-12 col-md-12 col-lg-12">
+                                        <img src = "images/swift.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row margin-top-20">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  pull-right">
+                                    <a href="#menu" class="change-section">
+                                        <div class="black-bg btn-menu">
+                                            <h2>Back to menu</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section><!-- introduction -->    
+                        
+						<section id="album_list-section" class="inactive">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="col-sm-12 col-md-12 col-lg-12 black-bg">
+                                        <h2>Album List</h2>
+                                        <p>Taylor Swift published 5 albums until 2016.<br>You can click the cover for more information.</p>
+										<p><a href="#a1" class="change-section"><img src = "images/list/2006_taylor_swift.jpg" style="width:240x;height:240px;"><br><font size="+1"><strong>Taylor Swift(2006)</strong></a> 
+										<p><a href="#a2" class="change-section"><img src = "images/list/2008_fearless.jpg" style="width:240x;height:240px;"><br><font size="+1"><strong>Fearless(2008)</strong></a> 
+										<p><a href="#a3" class="change-section"><img src = "images/list/2010_speak_now.jpg" style="width:240x;height:240px;"><br><font size="+1"><strong>Speak Now(2010)</strong></a> 
+										<p><a href="#a4" class="change-section"><img src = "images/list/2012_red.png" style="width:240x;height:240px;"><br><font size="+1"><strong>Red(2012)</strong></a> 
+										<p><a href="#a5" class="change-section"><img src = "images/list/2014_1989.jpg" style="width:240x;height:240px;"><br><font size="+1"><strong>1989(2014)</strong></a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row margin-top-20">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  pull-right">
+                                    <a href="#menu" class="change-section">
+                                        <div class="black-bg btn-menu">
+                                            <h2>Back to menu</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section><!-- Album List -->    
+						
+						<section id="a1-section" class="inactive">
+							<div class="row">
+								<div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="col-sm-12 col-md-12 col-lg-12 black-bg">
+									
+										<div class="col-sm-6 col-md-6">
+										<p>
+										<font size="+1"color="red"><strong>Taylor Swift(2006)</strong></font>
+										<br>1. Tim McGraw <button name ="fav_song"type = "button" onclick = "add_fav('Tim McGraw')"><font color="black">+</font></button>
+										<br>2. Picture to Burn <button name ="fav_song"type = "button" onclick = "add_fav('Picture to Burn')"><font color="black">+</font></button>
+										<br>3. Teardrops on My Guitar <button name ="fav_song"type = "button" onclick = "add_fav('Teardrops on My Guitar')"><font color="black">+</font></button>
+										<br>4. A Place in This World <button name ="fav_song"type = "button" onclick = "add_fav('A Place in This World')"><font color="black">+</font></button>
+										<br>5. Cold as You <button name ="fav_song"type = "button" onclick = "add_fav('Cold as You')"><font color="black">+</font></button>
+										<br>6. The Outsnamee <button name ="fav_song"type = "button" onclick = "add_fav('The Outsnamee')"><font color="black">+</font></button>
+										<br>7. Tied Together with a Smile <button name ="fav_song"type = "button" onclick = "add_fav('Tied Together with a Smile')"><font color="black">+</font></button>
+										<br>8. Stay Beautiful <button name ="fav_song"type = "button" onclick = "add_fav('Stay Beautiful')"><font color="black">+</font></button>
+										<br>9. Should've Saname No <button name ="fav_song"type = "button" onclick = "add_fav('Should've Saname No')"><font color="black">+</font></button>
+										<br>10. Mary's Song <button name ="fav_song"type = "button" onclick = "add_fav('Mary's Song')"><font color="black">+</font></button>
+										<br>11. Our Song <button name ="fav_song"type = "button" onclick = "add_fav('Our Song')"><font color="black">+</font></button>
+										</p>
+										</div>
+										
+										<div class="col-sm-6 col-md-6">
+											<img src = "images/list/2006_taylor_swift.jpg" style="width:320px;height:320px;">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row margin-top-20">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  pull-right">
+                                    <a href="#album_list" class="change-section">
+                                        <div class="black-bg btn-menu">
+                                            <h2>Back to Album List</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+						</section>
+						
+						<section id="a2-section" class="inactive">
+							<div class="row">
+								<div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="col-sm-12 col-md-12 col-lg-12 black-bg">
+										<div class="col-sm-6 col-md-6">
+										<p>
+										<font size="+1" color="red"><strong>Fearless(2008)</strong></font>
+										<br>1. Fearless <button name ="fav_song"type = "button" onclick = "add_fav('Fearless')"><font color="black">+</font></button>
+										<br>2. Fifteen <button name ="fav_song"type = "button" onclick = "add_fav('Fifteen')"><font color="black">+</font></button>
+										<br>3. Love Story <button name ="fav_song"type = "button" onclick = "add_fav('Love Story')"><font color="black">+</font></button>
+										<br>4. Hey Stephan <button name ="fav_song"type = "button" onclick = "add_fav('Hey Stephan')"><font color="black">+</font></button>
+										<br>5. White Horse <button name ="fav_song"type = "button" onclick = "add_fav('White Horse')"><font color="black">+</font></button>
+										<br>6. You Belong With Me <button name ="fav_song"type = "button" onclick = "add_fav('You Belong With Me')"><font color="black">+</font></button>
+										<br>7. Breathe <button name ="fav_song"type = "button" onclick = "add_fav('Breathe')"><font color="black">+</font></button>
+										<br>8. Tell Me Why <button name ="fav_song"type = "button" onclick = "add_fav('Tell Me Why')"><font color="black">+</font></button>
+										<br>9. You're Not Sorry <button name ="fav_song"type = "button" onclick = "add_fav('You're Not Sorry')"><font color="black">+</font></button>
+										<br>10. The Way I Loved You <button name ="fav_song"type = "button" onclick = "add_fav('The Way I Loved You')"><font color="black">+</font></button>
+										<br>11. Forever & Always <button name ="fav_song"type = "button" onclick = "add_fav('Forever & Always')"><font color="black">+</font></button>
+										<br>12. The Best Day <button name ="fav_song"type = "button" onclick = "add_fav('The Best Day')"><font color="black">+</font></button>
+										<br>13. Change <button name ="fav_song"type = "button" onclick = "add_fav('Change')"><font color="black">+</font></button>
+										</p>
+										</div>
+										
+										<div class="col-sm-6 col-md-6">
+											<img src = "images/list/2008_fearless.jpg" style="width:320px;height:320px;">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row margin-top-20">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  pull-right">
+                                    <a href="#album_list" class="change-section">
+                                        <div class="black-bg btn-menu">
+                                            <h2>Back to Album List</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+						</section>
+						
+						<section id="a3-section" class="inactive">
+							<div class="row">
+								<div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="col-sm-12 col-md-12 col-lg-12 black-bg">
+										<div class="col-sm-6 col-md-6">
+										<p>
+										<font size="+1" color="red"><strong>Speak Now(2010)</strong></font>
+										<br>1.Mine <button name ="fav_song"type = "button" onclick = "add_fav('Mine')"><font color="black">+</font></button>									
+										<br>2.Sparks Fly <button name ="fav_song"type = "button" onclick = "add_fav('Sparks Fly')"><font color="black">+</font></button>
+										<br>3.Back to December <button name ="fav_song"type = "button" onclick = "add_fav('Back to December')"><font color="black">+</font></button>
+										<br>4.Speak Now <button name ="fav_song"type = "button" onclick = "add_fav('Speak Now')"><font color="black">+</font></button>
+										<br>5.Dear John <button name ="fav_song"type = "button" onclick = "add_fav('Dear John')"><font color="black">+</font></button>
+										<br>6.Mean <button name ="fav_song"type = "button" onclick = "add_fav('Mean')"><font color="black">+</font></button>
+										<br>7.The Story of Us <button name ="fav_song"type = "button" onclick = "add_fav('The Story of Us')"><font color="black">+</font></button>
+										<br>8.Never Grow Up <button name ="fav_song"type = "button" onclick = "add_fav('Never Grow Up')"><font color="black">+</font></button>
+										<br>9.Enchanted <button name ="fav_song"type = "button" onclick = "add_fav('Enchanted')"><font color="black">+</font></button>
+										<br>10.Better Than Revenge <button name ="fav_song"type = "button" onclick = "add_fav('Better Than Revenge')"><font color="black">+</font></button>
+										<br>11.Innocent <button name ="fav_song"type = "button" onclick = "add_fav('Innocent')"><font color="black">+</font></button>
+										<br>12.Haunted <button name ="fav_song"type = "button" onclick = "add_fav('Haunted')"><font color="black">+</font></button>
+										<br>13.Last Kiss <button name ="fav_song"type = "button" onclick = "add_fav('Last Kiss')"><font color="black">+</font></button>
+										<br>14.Long Live <button name ="fav_song"type = "button" onclick = "add_fav('Long Live')"><font color="black">+</font></button>
+										</p>
+										</div>
+										
+										<div class="col-sm-6 col-md-6">
+											<img src = "images/list/2010_speak_now.jpg" style="width:320px;height:320px;">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row margin-top-20">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  pull-right">
+                                    <a href="#album_list" class="change-section">
+                                        <div class="black-bg btn-menu">
+                                            <h2>Back to Album List</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+						</section>
+						
+						<section id="a4-section" class="inactive">
+							<div class="row">
+								<div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="col-sm-12 col-md-12 col-lg-12 black-bg">
+										<div class="col-sm-6 col-md-6">
+										<p>
+										<font size="+1" color="red"><strong>Red(2012)</strong></font>
+										<br>1.State of Grace <button name ="fav_song"type = "button" onclick = "add_fav('State of Grace')"><font color="black">+</font></button>
+										<br>2.Red <button name ="fav_song"type = "button" onclick = "add_fav('Red')"><font color="black">+</font></button>
+										<br>3.Treacherous <button name ="fav_song"type = "button" onclick = "add_fav('Treacherous')"><font color="black">+</font></button>
+										<br>4.I Knew You Were Trouble <button name ="fav_song"type = "button" onclick = "add_fav('I Knew You Were Trouble')"><font color="black">+</font></button>
+										<br>5.All Too Well <button name ="fav_song"type = "button" onclick = "add_fav('All Too Well')"><font color="black">+</font></button>
+										<br>6.22 <button name ="fav_song"type = "button" onclick = "add_fav('22')"><font color="black">+</font></button>
+										<br>7.I Almost Do <button name ="fav_song"type = "button" onclick = "add_fav('I Almost Do')"><font color="black">+</font></button>
+										<br>8.We Are Never Ever Getting Back Together <button name ="fav_song"type = "button" onclick = "add_fav('We Are Never Ever Getting Back Together')"><font color="black">+</font></button>
+										<br>9.Stay Stay Stay <button name ="fav_song"type = "button" onclick = "add_fav('Stay Stay Stay')"><font color="black">+</font></button>
+										<br>10.The Last Time <button name ="fav_song"type = "button" onclick = "add_fav('The Last Time')"><font color="black">+</font></button>
+										<br>11.Holy Ground <button name ="fav_song"type = "button" onclick = "add_fav('Holy Ground')"><font color="black">+</font></button>
+										<br>12.Sad Beautiful Tragic <button name ="fav_song"type = "button" onclick = "add_fav('Sad Beautiful Tragic')"><font color="black">+</font></button>
+										<br>13.The Lucky One <button name ="fav_song"type = "button" onclick = "add_fav('The Lucky One')"><font color="black">+</font></button>
+										<br>14.Everything Has Changed <button name ="fav_song"type = "button" onclick = "add_fav('Everything Has Changed')"><font color="black">+</font></button>
+										<br>15.Starlight <button name ="fav_song"type = "button" onclick = "add_fav('Starlight')"><font color="black">+</font></button>
+										<br>16.Begin Again <button name ="fav_song"type = "button" onclick = "add_fav('Begin Again')"><font color="black">+</font></button>
+										</p>
+										</div>
+										
+										<div class="col-sm-6 col-md-6">
+											<img src = "images/list/2012_red.png" style="width:320px;height:320px;">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row margin-top-20">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  pull-right">
+                                    <a href="#album_list" class="change-section">
+                                        <div class="black-bg btn-menu">
+                                            <h2>Back to Album List</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+						</section>
+						
+						<section id="a5-section" class="inactive">
+							<div class="row">
+								<div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="col-sm-12 col-md-12 col-lg-12 black-bg">
+										<div class="col-sm-6 col-md-6">
+										<p>
+										<font size="+1" color="red"><strong>1989(2014)</strong></font>
+										<br>1.Welcome to New York <button name ="fav_song"type = "button" onclick = "add_fav('Welcome to New York')"><font color="black">+</font></button>
+										<br>2.Blank Space <button name ="fav_song"type = "button" onclick = "add_fav('Blank Space')"><font color="black">+</font></button>
+										<br>3.Style <button name ="fav_song"type = "button" onclick = "add_fav('Style')"><font color="black">+</font></button>
+										<br>4.Out of the Woods <button name ="fav_song"type = "button" onclick = "add_fav('Out of the Woods')"><font color="black">+</font></button>
+										<br>5.All You Had to Do Was Stay <button name ="fav_song"type = "button" onclick = "add_fav('All You Had to Do Was Stay ')"><font color="black">+</font></button>
+										<br>6.Shake It Off <button name ="fav_song"type = "button" onclick = "add_fav('Shake It Off')"><font color="black">+</font></button>
+										<br>7.I Wish You Would <button name ="fav_song"type = "button" onclick = "add_fav('I Wish You Would')"><font color="black">+</font></button>
+										<br>8.Bad Blood <button name ="fav_song"type = "button" onclick = "add_fav('Bad Blood')"><font color="black">+</font></button>
+										<br>9.Wildest Dreams <button name ="fav_song"type = "button" onclick = "add_fav('Wildest Dreams')"><font color="black">+</font></button>
+										<br>10.How You Get the Girl <button name ="fav_song"type = "button" onclick = "add_fav('How You Get the Girl')"><font color="black">+</font></button>
+										<br>11.This Love <button name ="fav_song"type = "button" onclick = "add_fav('This Love')"><font color="black">+</font></button>
+										<br>12.I Know Places <button name ="fav_song"type = "button" onclick = "add_fav('I Know Places')"><font color="black">+</font></button>
+										<br>13.Clean <button name ="fav_song"type = "button" onclick = "add_fav('Clean')"><font color="black">+</font></button>
+										</p>
+										</div>
+										
+										<div class="col-sm-6 col-md-6">
+											<img src = "images/list/2014_1989.jpg" style="width:320px;height:320px;">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row margin-top-20">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  pull-right">
+                                    <a href="#album_list" class="change-section">
+                                        <div class="black-bg btn-menu">
+                                            <h2>Back to Album List</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+						</section>
+						
+                        <section id="about-section" class="inactive">
+                            <div class="row">
+                                <div class="black-bg col-sm-12 col-md-12 col-lg-12">
+                                    <h2 class="text-center">Seacrch in the youtube</h2>
+                                    <div class="col-sm-6 col-md-6">
+									<script>
+										(function() {
+											var cx = '005596122075971396064:jpttkoxfcxq';
+											var gcse = document.createElement('script');
+											gcse.type = 'text/javascript';
+											gcse.async = true;
+											gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+											var s = document.getElementsByTagName('script')[0];
+											s.parentNode.insertBefore(gcse, s);
+										})();
+									</script>
+									<gcse:search></gcse:search>
+									<br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row margin-top-20">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  pull-right">
+                                    <a href="#menu" class="change-section">
+                                        <div class="black-bg btn-menu">
+                                            <h2>Back to menu</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section><!-- search -->    
+                       
+                        <section id="favourite_list-section" class="inactive">
+                            <div class="row">
+                                <div class="black-bg col-sm-12 col-md-12 col-lg-12">
+                                    <h2 class="text-center">Favourite List</h2>
+                                    <div class="col-sm-12 col-md-12">
+                                        <p id = "fav_list">Empty</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row margin-top-20">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6  pull-right">
+                                    <a href="#menu" class="change-section">
+                                        <div class="black-bg btn-menu">
+                                            <h2>Back to menu</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section><!-- favourite_list_section -->
+						
+                    </div><!-- /.templatemo-content -->
+                </div><!-- /.templatemo-content-wrapper -->
+            </div><!-- /.row --> 
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer">
+                    <p class="footer-text">Made by TANG Chun Wai</p>
+                </div><!-- /.footer --> 
+            </div>
+
+		</div><!-- /#main-wrapper -->
+        
+        <div id="preloader">
+            <div id="status">&nbsp;</div>
+        </div><!-- /#preloader -->
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script src="js/templatemo_script.js"></script>
+		
+		<script src = "/socket.io/socket.io.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB98D39KlpCFw1eCRXH_-gDvLCqTvjoT-8&callback=initMap" async defer></script>
+		
+		<script>
+			window.onload = function(){
+				$("#btn_logout").hide();
+				$("#btn_fav").hide();
+				$("button[name='fav_song']").hide();
+			}
+			var socket = io();
+			var test_list;
+			var list;
+			
+			socket.on("login_succ", function(data){
+				document.getElementById("welcome").innerHTML = "Welcome back, " + data.ac + " !";
+				$("#btn_login").hide();
+				$("#btn_logout").show();
+				$("#btn_fav").show();
+				$("button[name='fav_song']").show();
+				
+				test_list = data.fav_list;
+				up_fav(data.fav_list);
+			});
+			
+			socket.on("list_updated", function(data){
+				alert("This song added to favourite list success !");
+				test_list = data.fav_list;
+				up_fav(data.fav_list);
+			});
+			
+			socket.on("song_removed", function(data){
+				alert("One song removed from favourite list !");
+				up_fav(data.fav_list);
+			});
+			
+			function sign_out(){
+				var user = {};
+				user.act = "logout";
+				
+				$.ajax({
+					url: "http://localhost:7000/index.html",
+					type: "POST",
+					data: user
+				});
+				
+				$("#btn_fav").hide();
+				$("#btn_logout").hide();
+				$("button[name='fav_song']").hide();
+				document.getElementById("welcome").innerHTML = "";
+				
+				$("#btn_login").show();
+				islogin = false;
+				return false;
+			}
+			
+			function up_fav(song_list){
+				list = song_list;
+				document.getElementById("fav_list").innerHTML = "";
+				if(song_list==""){
+					document.getElementById("fav_list").innerHTML ="Empty, you can add your favourite song to this list~";
+				}
+				for(var i=0; i<song_list.length; i++){
+					document.getElementById("fav_list").innerHTML += 
+					song_list[i]+"<button onclick='remove("+i+")'><font color='black'>remove</font></button><br>";
+				}
+			}
+			
+			function add_fav(song){
+				var reapeat_song = false;
+				
+				if(confirm("Do you want to add this song to favourite_list?")){
+					
+					for(var i=0; i<test_list.length; i++){
+						if(song==test_list[i])
+							reapeat_song = true;
+					}
+					
+					if(reapeat_song == true){
+						alert("This song already added to favourite list.");
+						reapeat_song = false;
+					}else{
+						var user = {};
+						user.act = "add_song";
+						user.song = song;
+						
+						$.ajax({
+							url: "http://localhost:7000/index.html",
+							type: "POST",
+							data: user
+						});
+					
+						return false;
+					}
+				}
+			}
+			
+			function remove(song_num){
+				if(confirm("Do you want to remove this song from favourite list?")){
+					var user = {};
+					user.act = "remove_song";
+					user.song = list[song_num];
+					
+					$.ajax( {
+						url: "http://localhost:7000/index.html",
+						type: "POST",
+						data: user
+					});
+					return false;
+				}
+			}
+			
+			function initMap() {
+				var myLatLng = {lat: 22.3176839, lng: 114.170093};										
+					// Create a map object and specify the DOM element for display.
+					var map = new google.maps.Map(document.getElementById('map'), {
+						center: myLatLng,
+						scrollwheel: false,
+						zoom: 18
+					});
+											
+					var marker = new google.maps.Marker({
+						map: map,
+						position: myLatLng,
+						title: 'DNA'
+					});
+			}
+		</script>
+    </body> 
+</html>

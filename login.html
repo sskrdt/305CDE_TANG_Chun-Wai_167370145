@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login&Register</title>
+  
+  
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans:600'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Register</label>
+		<div class="login-form">
+			<!--login-->
+			<div class="sign-in-htm">
+				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input id="log_user" name="log_ac" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="log_pass" name="log_pw" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<input id="login" type="submit" class="button" value="Login">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="./index.html">Home Page</a>
+				</div>
+			</div>
+			
+			<!--sign up-->
+			<div class="sign-up-htm">
+				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input id="user" name="ac" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" name="pw" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="re_pass" class="label">Repeat Password</label>
+					<input id="re_pass" name="re_pw" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="email" class="label">Email Address</label>
+					<input id="email" name="email" type="text" class="input">
+				</div>
+				<div class="group">
+					<input id="sign_up"type="submit" class="button" value="Sign Up">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<label for="tab-1">Already Member?</a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src = "/socket.io/socket.io.js"></script>
+
+<script>
+	var socket = io();
+	
+	socket.on("add_successful", function(data){
+		alert("Congratulations, your account signed up. You can try to login now.");
+		window.location = "/login.html";
+	});
+	
+	socket.on("reapeat_account", function(data){
+		alert("You already have an account.");
+		window.location = "/login.html";
+	});
+	
+	socket.on("reapeat_user", function(data){
+		alert("Reapeated username, please try another username!");
+	});
+	
+	socket.on("repeat_email", function(data){
+		alert("Reapeated Email, please use another username!");
+	});
+	
+	socket.on("login_succ",function(data){
+		window.location = "/index.html";
+	});
+	
+	socket.on("login_fail",function(data){
+		alert("Username or password was incorrect.\n Please try again!");
+	});
+	
+	$(function() {
+		$("#login").click(function(e){
+			$(function(){
+				var user = {};
+				user.act = "login";
+				user.ac = $("input[name='log_ac']").val();
+				user.pw = $("input[name='log_pw']").val();
+				$.ajax({
+					url: "http://localhost:7000/login.html",
+					type: "POST",
+					data: user
+				});
+				return false;
+			});
+		});
+	
+		$("#sign_up").click(function(e){
+			var user = {};
+			user.act = "signup";
+			user.ac = $("input[name='ac']").val();
+			user.pw = $("input[name='pw']").val();
+			user.email = $("input[name='email']").val();
+			if(user.ac == ""||user.pw == ""||$("input[name='re_pw']").val()==""||user.email==""){
+				alert("Please input all infomration!");
+			}else if ($("input[name='re_pw']").val() != user.pw){
+				alert("Please input same password at repeat password!");
+			}else {
+				$.ajax( {
+					url: "http://localhost:7000/login.html",
+					type: "POST",
+					data: user
+				});
+			}
+			return false;
+		});
+	});
+</script>
+</html>
